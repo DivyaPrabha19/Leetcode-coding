@@ -1,0 +1,19 @@
+class Solution {
+    public int climbStairs(int n) {
+        int f=1, s=2,c;
+        if(n<=2){
+            return n;
+        }
+        for(int i=3;i<=n;i++){
+            c=f+s;
+            f=s;
+            s=c;
+        }
+        return s;
+
+
+    }}
+
+output:
+Input: n = 2
+Output: 2
